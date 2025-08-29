@@ -1,0 +1,8 @@
+<resources>
+    <style name="Theme.HealthScanPro" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Material color scheme -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+    </style>
+</resources>

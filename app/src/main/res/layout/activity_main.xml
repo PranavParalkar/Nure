@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_700">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Hero Title -->
+        <TextView
+            android:id="@+id/appTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="16dp"
+            android:textColor="@color/white" />
+
+        <!-- Tagline -->
+        <TextView
+            android:id="@+id/tagline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tagline"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textColor="@color/white" />
+
+        <!-- Scan Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/scanBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scan_button"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/teal_700"
+            android:textColor="@color/white"
+            app:cornerRadius="24dp" />
+
+        <!-- Card: Scanned Result -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/resultText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/scanned_result"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/purple_700" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Card: Product Info with Image -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/productCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Product Image -->
+                <ImageView
+                    android:id="@+id/productImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_placeholder"
+                    android:layout_marginBottom="12dp"
+                    android:contentDescription="@string/product_image" />
+
+                <!-- Brand -->
+                <TextView
+                    android:text="@string/brand_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/brandText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:paddingBottom="8dp"
+                    android:textColor="@color/black" />
+
+                <!-- Ingredients -->
+                <TextView
+                    android:text="@string/ingredients_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/ingredientsText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:paddingBottom="8dp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</ScrollView>

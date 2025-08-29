@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HealthScanPro</string>
+    <string name="tagline">Scan products and check ingredients</string>
+    <string name="scan_button">Scan Product</string>
+    <string name="scanned_result">Scanned Result</string>
+    <string name="brand_label">Brand</string>
+    <string name="ingredients_label">Ingredients</string>
+    <string name="product_image">Product Image</string>
+</resources>
